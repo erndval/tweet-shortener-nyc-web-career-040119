@@ -19,7 +19,7 @@ def word_substituter(tweet)
       if word == entry
         replacement << tweet_sentence
       else
-        word << tweet_sentence
+        word << [tweet_sentence]
       end
     end
   end
