@@ -13,5 +13,13 @@ dictionary = {
 
 def word_subsituter(tweet)
   tweet_string = tweet.split(" ")
-  
+  tweet_string.each do |word|
+    dictionary.each do |entry, replacement|
+      if word == entry
+        word = replacement
+      end
+    end
+  end
+  tweet_string.join(" ")
+end
   
