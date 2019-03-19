@@ -14,6 +14,7 @@ def word_substituter(tweet)
   
   tweet_string = tweet.split(" ")
   tweet_string.each do |word|
-    if 
+    if dictionary.value?(word)
+      word = 
 end
   
