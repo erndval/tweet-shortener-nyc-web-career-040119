@@ -16,11 +16,11 @@ def word_substituter(tweet)
   new_tweet = []
   tweet_string.each do |word|
     if dictionary.keys.include?(word)
-      word = dictionary[word]
+      new_tweet << dictionary[word]
     else 
-      word
+      new_tweet << word
     end
   end
-  tweet_string.join(" ")
+  new_tweet.join(" ")
 end
   
