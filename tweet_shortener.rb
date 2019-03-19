@@ -8,10 +8,10 @@ dictionary = {
   "be" => "b",
   "you" => "u",
   "at" => "@",
-  "and" => "&",
+  "and" => "&"
 }
 
-def word_subsituter(tweet)
+def word_substituter(tweet)
   tweet_string = tweet.split(" ")
   tweet_string.each do |word|
     dictionary.each do |entry, replacement|
