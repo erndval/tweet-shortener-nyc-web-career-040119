@@ -1,5 +1,5 @@
-def dictionary 
-  shorts = {
+def word_substituter(tweet)
+  dictionary = {
   "hello" => "hi",
   "for" => "4",
   "four" => "4",
@@ -10,14 +10,11 @@ def dictionary
   "you" => "u",
   "at" => "@",
   "and" => "&"
-}
-end
-
-def word_substituter(tweet)
-  dictionary
+  }
+  
   tweet_string = tweet.split(" ")
   tweet_string.each do |word|
-    shorts.each do |entry, replacement|
+    dictionary.each do |entry, replacement|
       if word == entry
         word = replacement
       end
