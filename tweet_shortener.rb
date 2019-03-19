@@ -13,7 +13,7 @@ def word_substituter(tweet)
   }
   
   tweet_string = tweet.split(" ")
-  dictionary.each do |entry, replacement|
-    if entry == 
+  tweet_string.each do |word|
+    if word
 end
   
