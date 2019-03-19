@@ -1,5 +1,5 @@
 def dictionary 
-  {
+  shorts = {
   "hello" => "hi",
   "for" => "4",
   "four" => "4",
