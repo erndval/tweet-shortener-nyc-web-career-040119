@@ -12,5 +12,6 @@ dictionary = {
 }
 
 def word_subsituter(tweet)
-  tweet.split(" ")
+  tweet_string = tweet.split(" ")
+  
   
